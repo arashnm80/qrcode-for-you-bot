@@ -15,8 +15,5 @@ def send_qr(message):
     output_file_path = f"{output_folder}/{message.chat.id}.png"
     with open(output_file_path, 'rb') as photo:
         bot.send_photo(message.chat.id, photo)
-    # delete photo after sending
-    if os.path.exists(output_file_path):
-        os.remove(output_file_path)
     
 bot.infinity_polling()
