@@ -6,3 +6,7 @@
 ```
 pip install -r requirements.txt
 ```
+- single run:
+```
+python3 main.py
+```
