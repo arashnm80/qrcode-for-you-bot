@@ -1,10 +1,12 @@
 from needed_modules import *
 from functions import *
+from log import *
 
 bot = telebot.TeleBot(bot_api)
 
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
+    log(f"{bot_name} log:\n\nCommand received from user {message.chat.id}")
     bot.reply_to(message, bot_introduction_msg)
 
 @bot.message_handler(func=lambda message: True)
