@@ -14,6 +14,6 @@ def send_qr(message):
     generate_qr(message.chat.id, message.text)
     output_file_path = f"{output_folder}/{message.chat.id}.png"
     with open(output_file_path, 'rb') as photo:
-        bot.send_photo(message.chat.id, photo)
+        bot.send_photo(message.chat.id, photo, reply_to_message_id=message.message_id)
     
 bot.infinity_polling()
