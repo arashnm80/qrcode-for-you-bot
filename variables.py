@@ -2,7 +2,7 @@ import os
 
 # settings
 output_folder = "./output"
-bot_api = os.environ["QRCODE_FOR_YOU_BOT"]
+bot_api = os.environ["QRCODE_FOR_YOU_BOT_API"]
 send_logs = True # if is set to True 'LOG_CHANNEL_ID' should be defined env
 
 # names
