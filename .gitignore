@@ -1,3 +1,6 @@
 # ignored folders
 output/
 __pycache__/
+
+# ignored files
+nohup.out
