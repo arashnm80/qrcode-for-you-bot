@@ -1,3 +1,5 @@
+# Note: Code works fine but the bot is turned off at the moment
+
 # QR-Code For You Bot
 
 ## How to use
